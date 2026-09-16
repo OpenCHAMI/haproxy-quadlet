@@ -9,6 +9,6 @@ on:
 
 jobs:
   cleanup:
-    uses: OpenCHAMI/github-actions/.github/workflows/pr-registry-cleanup.yml@v3.9
+    uses: OpenCHAMI/github-actions/.github/workflows/pr-registry-cleanup.yml@v3.11
     permissions:
       packages: write
