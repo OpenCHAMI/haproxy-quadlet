@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: 2026 OpenCHAMI Contributors
+# SPDX-License-Identifier: MIT
+
+[Unit]
+Description=The %N container
+Wants=acme-deploy.service boot-service.service metadata-service.service smd.service tokensmith.service
+After=acme-deploy.service boot-service.service metadata-service.service smd.service tokensmith.service
+PartOf=openchami.target
+
+[Container]
+ContainerName=%N
+HostName=%N
+Image=cgr.dev/chainguard/haproxy:latest
+
+[Service]
+Restart=always
