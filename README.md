@@ -19,4 +19,4 @@ sudo systemctl start haproxy.service
 
 Edit `/etc/openchami/configs/haproxy.cfg` to change routing. For Podman or systemd changes, add a drop-in under `/etc/containers/systemd/haproxy.container.d/` rather than editing the packaged one, then run `systemctl daemon-reload`.
 
-TLS certificates are read from the `haproxy-certs` volume, which `openchami-acme-quadlets` populates; supply your own there if you are not using ACME.
+TLS certificates are read from the `haproxy-certs` volume, which `openchami-acme-quadlet` populates; supply your own there if you are not using ACME.

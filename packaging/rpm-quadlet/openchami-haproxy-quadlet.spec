@@ -22,9 +22,9 @@ Requires(post,preun,postun):  systemd
 # systemd-style *.container.d drop-in directories
 Requires:                     podman >= 5.0.0
 
-# NOTE: openchami-acme-quadlets populates the haproxy-certs volume that
+# NOTE: openchami-acme-quadlet populates the haproxy-certs volume that
 # terminates TLS, but a site may install its own certificates there instead.
-Suggests:                     openchami-acme-quadlets >= 0.0.1
+Suggests:                     openchami-acme-quadlet >= 0.0.1
 Suggests:                     boot-service-quadlet >= 0.3.2
 Suggests:                     metadata-service-quadlet >= 0.2.2
 Suggests:                     smd-quadlet >= 2.20.5
